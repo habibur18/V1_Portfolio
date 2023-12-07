@@ -1,0 +1,14 @@
+.border-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  transition: border-color 1s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.border-transition:hover {
+  border-color: #ff0072; /* Change this color to the desired hover color */
+}

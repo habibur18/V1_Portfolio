@@ -1,0 +1,36 @@
+/* Orbit.css */
+
+.orbit-container {
+  position: relative;
+  width: 300px; /* Default width for larger devices */
+  height: 300px; /* Default height for larger devices */
+  border: 2px solid #333;
+  border-radius: 50%;
+  animation: orbit 30s linear infinite; /* Increase the duration for a slower movement */
+}
+
+.tech-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+  .orbit-container {
+    width: 200px; /* Adjust width for smaller devices */
+    height: 200px; /* Adjust height for smaller devices */
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */

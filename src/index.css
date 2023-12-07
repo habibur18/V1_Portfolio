@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #212121;
+  z-index: -2;
+  mix-blend-mode: color-dodge;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f1e1e;
+  z-index: -2;
+  opacity: 90%;
+  mix-blend-mode: color-dodge;
+} */
+
+html {
+  background: #123;
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: "";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+/* top left */
+body::before {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  background: blueviolet;
+  backdrop-filter: blur(500px);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* top right */
+body::after {
+  /* Keep width and height same */
+  width: 200px;
+  height: 200px;
+
+  /* Position it absolutely at the desired location */
+  position: absolute;
+  top: 0;
+  right: 60;
+
+  /* Create a gradient for multiple colors */
+  background: linear-gradient(90deg, #f00 0%, #ff0 33%, #0f0 66%, #00f 100%);
+  background-size: 200px 200px;
+
+  /* Blur the background */
+  filter: blur(90px);
+
+  /* Keep it in its original position and allow rotation */
+  transform-origin: center;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body::before {
+  @include dots(40);
+  animation-delay: 0s;
+}
+
+@media screen and (max-width: 500px) {
+  .techtack {
+    flex-direction: column;
+    font-size: 15px;
+
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .hi {
+    font-size: 2.5rem;
+  }
+  .junior {
+    font-size: 1.5rem;
+  }
+}
+/* .techtack {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  transform: translate(-50%, -50%);
+} */
+
+/* animation checking */
+
+/* // Add this CSS to your styles or a global stylesheet */
+
+/* Entrance animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Initial position, adjust as needed */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position */
+  }
+}
+
+/* Apply the animation to the Intro component */
+.animate-intro {
+  animation: fadeIn 1.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* // Add this CSS to your styles or a global stylesheet */
+
+/* Entrance animation from the left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-220px); /* Initial position, adjust as needed */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position */
+  }
+}
+
+/* Entrance animation from the right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(220px); /* Initial position, adjust as needed */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position */
+  }
+}
+
+/* Apply the animations to the Intro component */
+.animate-left {
+  animation: slideInLeft 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.animate-right {
+  animation: slideInRight 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
