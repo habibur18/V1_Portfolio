@@ -7,11 +7,13 @@ import "react-vertical-timeline-component/style.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
+  faFileDownload,
   faGamepad,
   faGraduationCap,
   faSchool,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import resume from "../../../public/habibur.pdf";
 
 const AboutMe = () => {
   return (
@@ -26,6 +28,23 @@ const AboutMe = () => {
           About Me
         </span>
       </h1>
+      <div id="resume" className="my-8 text-white mx-16">
+        <h1 className="text-3xl font-bold mb-6">My Resume</h1>
+        <div className="flex items-center space-x-4">
+          <a
+            href={resume}
+            download="habiburResume"
+            className="bg-blue-500 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300 transform hover:scale-105"
+            style={{
+              backgroundImage: "linear-gradient(to right, #3498db, #2980b9)",
+            }}
+          >
+            <FontAwesomeIcon icon={faFileDownload} className="text-xl" />
+            <span className="text-lg font-semibold">Download Resume</span>
+          </a>
+        </div>
+      </div>
+
       <div className="max-w-3xl p-6 mx-auto text-xl text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg  shadow-3xl">
         <p>
           I love learning new technologies. Currently, I'm enrolled in a course

@@ -92,7 +92,7 @@ const Projects = () => {
               alt=""
             />
           </div>
-          <div className="w-full pr-3 mt-5">
+          <div className="w-full pr-3 mt-5 px-4">
             <div className="flex justify-between w-full">
               <h1 className="text-2xl text-stone-300 font-bold mr-2">
                 Restro Boss
@@ -184,10 +184,10 @@ const Projects = () => {
             <div>
               <div className="text-white">
                 <p className="text-xl my-6">
-                  I have made this project using Express, MongoDB,
-                  JsonWebToken,and ReactJS. It's a restaurant food ordering app.
-                  Have an admin dashboard and customer dashboard as well. For
-                  Authentication used firebase.and also used react query
+                  It's a Car Repairing website. I have made this project using
+                  React, MongoDB, and ReactJS. It's have a about page. A service
+                  page that show all services. And have a booking page for
+                  booking. And have a Contact page for contact.(Static)
                 </p>
               </div>
               <p className="text-red-500">
