@@ -99,15 +99,29 @@ const Intro = () => {
             </h2>
             {/* hide this div when 500px and more */}
             <div className="space-x-5 text-5xl sm:hidden">
-              <Link className="">
+              <a
+                href="https://www.linkedin.com/in/amarhabibur/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-linkedin"></i>
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://github.com/habibur18"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-github"></i>
-              </Link>
-              <Link>
+              </a>
+              <a
+                title="habiburwebdev@gmail.com"
+                href="habiburwebdev@gmail.com
+"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-solid fa-envelope"></i>
-              </Link>
+              </a>
             </div>
             <div className="md:w-3/5 text-xl animate-right sm:block my-2">
               <p>
@@ -131,15 +145,29 @@ const Intro = () => {
           </div>
         </div>
         <div className="my-5 space-x-5 text-5xl hidden sm:block">
-          <Link className="">
+          <a
+            href="https://www.linkedin.com/in/amarhabibur/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-linkedin"></i>
-          </Link>
-          <Link>
+          </a>
+          <a
+            href="https://github.com/habibur18"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-github"></i>
-          </Link>
-          <Link>
+          </a>
+          <a
+            title="habiburwebdev@gmail.com
+"
+            href="habiburwebdev@gmail.com
+"
+            rel="noopener noreferrer"
+          >
             <i className="fa-solid fa-envelope"></i>
-          </Link>
+          </a>
         </div>
       </div>
       <div></div>
