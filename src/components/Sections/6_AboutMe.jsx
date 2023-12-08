@@ -13,8 +13,7 @@ import {
   faSchool,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import resume from "../../../public/habibur.pdf";
-
+import resume from "../../../public/Habibur-Rahman.pdf";
 const AboutMe = () => {
   return (
     <div id="aboutMe">
@@ -41,6 +40,15 @@ const AboutMe = () => {
           >
             <FontAwesomeIcon icon={faFileDownload} className="text-xl" />
             <span className="text-lg font-semibold">Download Resume</span>
+          </a>
+          <a
+            href="https://www.docdroid.net/1bGS5X0/habibur-rahman-pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-800 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300 transform hover:scale-105"
+          >
+            <FontAwesomeIcon icon={faFileDownload} className="text-xl" />
+            <span className="text-lg font-semibold">View Online</span>
           </a>
         </div>
       </div>
