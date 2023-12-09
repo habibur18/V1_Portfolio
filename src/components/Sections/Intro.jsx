@@ -14,10 +14,7 @@ const Intro = () => {
   const Texts = ["Frontend Developer", "MERN Developer", "Web Developer"];
 
   useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      2500 // every 3 seconds
-    );
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 2500);
     return () => clearTimeout(intervalId);
   }, []);
   return (
