@@ -1,0 +1,25 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.hi,
+.name {
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #2196f3,
+    #784caf,
+    #014f8e,
+    #9c27b0,
+    #2196f3
+  );
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s linear infinite;
+}

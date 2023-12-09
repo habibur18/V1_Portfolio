@@ -1,20 +1,32 @@
 import React, { useEffect, useState } from "react";
+import "./Intro.css";
+import TextTransition, { presets } from "react-text-transition";
 
 const Intro = () => {
   const [animate, setAnimate] = useState(false);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     // Trigger animation when the component mounts
     setAnimate(true);
   }, []);
 
+  const Texts = ["Frontend Developer", "MERN Developer", "Web Developer"];
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      2500 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
   return (
     <div className={`text-white p-3 ${animate ? "animate-intro" : ""}`}>
       <div>
         <div className={`flex justify-between animate-left`}>
           <div>
-            <h1 className="text-4xl my-3 hi">Hi, I am</h1>
-            <h1 className="text-5xl name">Habibur Rahman</h1>
+            <h1 className="text-4xl my-3">Hi, I am</h1>
+            <h1 className="lg:text-5xl font-bold name ">Habibur Rahman</h1>
 
             <h2
               style={{ lineHeight: "100px" }}
@@ -22,7 +34,15 @@ const Intro = () => {
             >
               Junior Web Developer &#160;&#160;
               <span className="border-l-4 border-yellow-600 pl-3 leading-10"></span>
-              MERN Stack
+              {/* MERN Stack */}
+              <TextTransition
+                direction="down"
+                inline={true}
+                translateValue="25px"
+                springConfig={presets.gentle}
+              >
+                {Texts[index % Texts.length]}
+              </TextTransition>
             </h2>
             {/* hide this div when 500px and more */}
             <div className="space-x-5 text-5xl sm:hidden">
@@ -42,9 +62,7 @@ const Intro = () => {
               </a>
               <a
                 title="habiburwebdev@gmail.com"
-                href="habiburwebdev@gmail.com
-"
-                target="_blank"
+                href="mailto:habiburwebdev@gmail.com"
                 rel="noopener noreferrer"
               >
                 <i className="fa-solid fa-envelope"></i>
@@ -87,10 +105,9 @@ const Intro = () => {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            title="habiburwebdev@gmail.com
-"
-            href="habiburwebdev@gmail.com
-"
+            title="habiburwebdev@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=habiburwebdev@gmail.com"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa-solid fa-envelope"></i>
