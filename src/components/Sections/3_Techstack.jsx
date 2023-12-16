@@ -32,10 +32,10 @@ const Techstack = () => {
       name: "CSS",
       src: "https://i.postimg.cc/64TCmSGz/css3-colored.png",
     },
-    {
-      name: "SASS",
-      src: "https://i.postimg.cc/9w4qp7vn/sass.png",
-    },
+    // {
+    // name: "SASS",
+    // src: "https://i.postimg.cc/9w4qp7vn/sass.png",
+    // },
     {
       name: "Tailwind",
       src: "https://i.postimg.cc/v1z9HMr3/Tailwindcss.png",

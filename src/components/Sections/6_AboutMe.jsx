@@ -14,6 +14,7 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import resume from "../../../public/Habibur-Rahman.pdf";
+import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <div id="aboutMe">
@@ -61,7 +62,15 @@ const AboutMe = () => {
           opportunities and internships. I plan to discuss the matter with my
           company to make an informed decision regarding the most suitable path
           for my career. Additionally, I'm excited to explore both paths during
-          the course and gain a comprehensive understanding by the end of it.
+          the course and gain a comprehensive understanding by the end of it.{" "}
+          <span>
+            <Link to="https://www.akcentadigital.cz/positions">
+              Looking for a internship position at{" "}
+              <span className="text-red-500 font-bold bg-gray-100 bg-opacity-80 rounded-md">
+                Akcenta Digital
+              </span>
+            </Link>{" "}
+          </span>
         </p>
       </div>
 
