@@ -1,0 +1,47 @@
+[33mcommit c1f7a611a3759bcfb01dbac316a8e2e4b9c3f534[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: habibur18 <amarhabibur@gmail.com>
+Date:   Sat Dec 16 14:56:29 2023 +0600
+
+    refactor the techstack & and aboutme
+
+[33mcommit 639e630fa9029588488df84db1f5a39aa4b33d63[m
+Author: habibur18 <amarhabibur@gmail.com>
+Date:   Sat Dec 9 14:13:06 2023 +0600
+
+    remove wrong comment
+
+[33mcommit d0aaa66b9a8d5aca85890f85333766f97446c654[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Sat Dec 9 11:33:28 2023 +0600
+
+    in name add gradient text color
+
+[33mcommit 40b7b74bae867f7a5d58ae4d6a9a95f93f34773d[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Fri Dec 8 14:38:21 2023 +0600
+
+    add cv view online & update cv info
+
+[33mcommit d6f45728cbd98cbb222bc6d0c9c2b84d685b4ff0[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Thu Dec 7 20:42:04 2023 +0600
+
+    add resume download system
+
+[33mcommit 1e4de56dcd865c55ae1ebf142e237baa4b7eb3ae[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Thu Dec 7 19:03:52 2023 +0600
+
+    added a custom web icon & customize Intro section
+
+[33mcommit dc542139478f3019da1fe9a0873df9e66d749dd9[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Thu Dec 7 18:23:51 2023 +0600
+
+    remove .firebase
+
+[33mcommit c4246055ff1ba3060c4840dc4ee5992eaa48635f[m
+Author: Habibur Rahman <freelancerr.habibur@gmail.com>
+Date:   Thu Dec 7 18:22:32 2023 +0600
+
+    push all code once
