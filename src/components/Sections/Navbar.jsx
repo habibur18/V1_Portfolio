@@ -63,9 +63,9 @@ const Navbar = () => {
           className={`${
             isMenuOpen
               ? "bg-gray-600 w-full text-center mx-auto rounded-xl"
-              : "hidden"
-          } cursor-pointer transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text`}
-          onClick={() => handleLinkClick("about")}
+              : ""
+          } cursor-pointer transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-300 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text z-10`}
+          onClick={() => handleLinkClick("aboutMe")}
         >
           About Me
         </ScrollLink>
