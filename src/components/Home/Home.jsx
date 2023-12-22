@@ -9,16 +9,18 @@ import Sidebar from "../Sections/SideBar/Sidebar";
 
 const Home = () => {
   return (
-    <div className="max-w-[1400px] mx-auto">
-      <Navbar />
-      <Intro />
-      <Techstack />
-      <Projects />
-      <AboutMe />
-      <Contact />
-      <Sidebar />
+    <>
+      <div className="max-w-[1400px] mx-auto">
+        <Navbar />
+        <Intro />
+        <Techstack />
+        <Projects />
+        <AboutMe />
+        <Contact />
+        <Sidebar />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -52,7 +52,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="max-w-3xl p-6 mx-auto text-xl text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg  shadow-3xl">
+      <div className="max-w-3xl p-6 mx-auto text-lg text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg  shadow-3xl">
         <p>
           I love learning new technologies. Currently, I'm enrolled in a course
           that offers two paths: Front-end and Full-stack development. I'm in a
@@ -68,7 +68,10 @@ const AboutMe = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentStyle={{
+              background: "rgb(33, 150, 243, 0.8)",
+              color: "#fff",
+            }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
             date="2023 - present"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -92,7 +95,7 @@ const AboutMe = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2021-2023[January later]"
-            contentStyle={{ background: "rgb(333, 150, 243)", color: "#fff" }}
+            contentStyle={{ background: "rgb(33, 50, 243,0.6)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(333, 50, 343)" }}
             iconStyle={{ background: "rgb(33, 50, 243)", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faGamepad} />}
@@ -110,7 +113,7 @@ const AboutMe = () => {
           {/* Add more VerticalTimelineElements as needed */}
           <VerticalTimelineElement
             className="vertical-timeline-element--education text-white"
-            contentStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            contentStyle={{ background: "rgb(233, 30, 99,0.6)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(233, 30, 99)" }}
             date="2019"
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}

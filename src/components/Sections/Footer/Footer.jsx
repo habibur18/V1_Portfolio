@@ -115,7 +115,7 @@ const Footer = () => {
           </nav>
         </div>
         {/* Skills */}
-        <div className="skills mt-8 mb-10 p-2 text-center lg:text-left">
+        <div className="skills mt-10 mb-20 p-2 text-center lg:text-left">
           <p className="text-lg font-semibold mb-2">Skills</p>
           <p>
             I'm a front-end developer familiar with HTML, CSS, JavaScript,

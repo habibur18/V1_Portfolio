@@ -58,7 +58,7 @@ const Projects = () => {
   return (
     <div id="projects" className=" my-10 px-4 md:px-10">
       <div>
-        <h1 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group w-full md:w-1/2 h-24">
+        <h1 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group w-full md:w-1/2 h-20">
           <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
             <span className="pr-2 text-2xl">View Projects</span>
             <svg
@@ -76,7 +76,7 @@ const Projects = () => {
               ></path>
             </svg>
           </span>
-          <span className="absolute flex items-center pl-16 w-full h-full text-5xl text-purple-500 bg-slate-700 transition-all duration-300 transform group-hover:translate-x-full ease">
+          <span className="absolute flex items-center pl-16 w-full h-full text-4xl text-purple-500 bg-slate-700 transition-all duration-300 transform group-hover:translate-x-full ease">
             Projects
           </span>
           <span className="relative invisible">Button Text</span>
@@ -110,7 +110,7 @@ const Projects = () => {
             </div>
             <div>
               <div className="text-white">
-                <p className="text-xl my-6">
+                <p className="text-lg my-6">
                   I have made this project using Express, MongoDB,
                   JsonWebToken,and ReactJS. It's a restaurant food ordering app.
                   Have an admin dashboard and customer dashboard as well. For
@@ -183,7 +183,7 @@ const Projects = () => {
             </div>
             <div>
               <div className="text-white">
-                <p className="text-xl my-6">
+                <p className="text-lg my-6">
                   It's a Car Repairing website. I have made this project using
                   React, MongoDB, and ReactJS. It's have a about page. A service
                   page that show all services. And have a booking page for
@@ -250,7 +250,7 @@ const Projects = () => {
             </figure>
             <div className="flex flex-col p-5 mt-auto flex-grow">
               <h1 className="text-2xl mb-2 font-semibold">Todos App</h1>
-              <div className="text-lg">
+              <div className="">
                 <p>
                   A simple Todo App created using{" "}
                   <i>
@@ -310,7 +310,7 @@ const Projects = () => {
             </figure>
             <div className="flex flex-col p-5 mt-auto flex-grow">
               <h1 className="text-2xl mb-2 font-semibold">Travel Volunteer</h1>
-              <div className="text-lg">
+              <div className="">
                 <p>
                   It's a travel application that I developed using{" "}
                   <b>React, Express, MongoDB, React Leaflet, and Firebase</b>.
@@ -365,7 +365,7 @@ const Projects = () => {
             </figure>
             <div className="flex flex-col p-5 mt-auto flex-grow">
               <h1 className="text-2xl mb-2 font-semibold">Chefaos</h1>
-              <div className="text-lg">
+              <div className="">
                 <p>
                   It's a chef finding application that I developed using{" "}
                   <b>React, Tailwind & firebase for login</b>. It's a showcase

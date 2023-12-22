@@ -97,7 +97,7 @@ const Techstack = () => {
       id="techstack"
       className={`text-white my-20 p-2 ${isVisible ? "visible" : ""} `}
     >
-      <h1 className="text-7xl w-3/3 md:hover:underline md:w-1/2 my-8 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg hover:scale-105 underline-offset-8 decoration-wavy decoration-sky-400">
+      <h1 className="text-5xl w-3/3 md:hover:underline md:w-1/2 my-8 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg hover:scale-105 underline-offset-8 decoration-wavy decoration-sky-400">
         Techstack
       </h1>
       <div className="grid items-center  gap-2 space-x-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
