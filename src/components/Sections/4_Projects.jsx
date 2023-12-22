@@ -237,30 +237,38 @@ const Projects = () => {
           {/* 1st */}
           <article className="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg flex flex-col justify-between">
             <figure>
-              <img
+              {/* <img
                 className="rounded-lg"
                 src="https://s5.gifyu.com/images/SiHDR.gif"
+                alt=""
+              /> */}
+              <img
+                className="rounded-lg"
+                src="https://s13.gifyu.com/images/SjsuA.gif"
                 alt=""
               />
             </figure>
             <div className="flex flex-col p-5 mt-auto flex-grow">
-              <h1 className="text-2xl mb-2 font-semibold">
-                Currency Converter
-              </h1>
+              <h1 className="text-2xl mb-2 font-semibold">Todos App</h1>
               <div className="text-lg">
                 <p>
-                  A Currency Converter app. It can convert most of the currency
-                  in the world. I have used <b>exchangerate-api.com </b>
-                  <i>(version 6)</i> for this currency convert. I have made
-                  other currency converter apps too. But this one is better than
-                  others.
+                  A simple Todo App created using{" "}
+                  <i>
+                    <b>HTML, CSS & JavaScript</b>
+                  </i>
+                  . Users can save todos and delete them. The todo list is
+                  stored in local storage. If a user attempts to delete a todo
+                  that is not marked as completed, a confirmation alert will
+                  appear. If the user clicks "OK," the todo will be deleted;
+                  otherwise, it will remain. Additionally, users can delete
+                  completed todos by clicking the delete button.
                 </p>
               </div>
             </div>
             <div className="mt-auto">
               <div className="text-white justify-start mx-5 flex gap-10">
                 <a
-                  href="https://github.com/habibur18/M1-currency-converter"
+                  href="https://github.com/habibur18/Todo-app"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -276,7 +284,7 @@ const Projects = () => {
                 </a>
                 <p className="text-xl my-6">
                   <a
-                    href="https://habibur18.github.io/M1-currency-converter/"
+                    href="https://todo-app18.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
