@@ -95,14 +95,14 @@ const Contact = () => {
       <div className="w-full bg-transparent flex justify-center items-center mt-42">
         <div className="relative inline-flex group my-5">
           <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-          <a
+          <button
             href="#"
             title="Get quote now"
-            className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+            className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#003049] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
             role="button"
           >
             Contact Now
-          </a>
+          </button>
         </div>
       </div>
       <div
@@ -112,7 +112,7 @@ const Contact = () => {
         {/* emoji */}
 
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto bg-white  p-8 rounded-lg shadow-md">
+          <div className="max-w-2xl mx-auto bg-[#003049]  p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-semibold animate-gradient mb-6 animate__animated animate__fadeInUp">
               I would <span className="gradient-text">love</span> to{" "}
               <span className="gradient-text">hear</span> from{" "}
@@ -128,12 +128,12 @@ const Contact = () => {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="space-y-4 text-gray-600 text-xl font-bold"
+              className="space-y-4 text-white text-xl font-bold"
             >
               <div>
                 <label
                   htmlFor="user_name"
-                  className="block text-sm font-medium text-gray-600"
+                  className="block text-sm text-white font-semibold"
                 >
                   Name
                 </label>
@@ -145,7 +145,7 @@ const Contact = () => {
                   onChange={(e) => setName(e.target.value)}
                   className={`mt-1 p-3 w-full border rounded-md focus:ring focus:ring-blue-500 focus:outline-none ${
                     nameError ? "border-red-500" : ""
-                  }`}
+                  } text-[#2A9D8F]`}
                 />
                 {nameError && (
                   <p className="text-red-500 text-sm">
@@ -156,7 +156,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="user_email"
-                  className="block text-sm font-medium text-gray-600"
+                  className="block text-sm text-white font-semibold"
                 >
                   Email
                 </label>
@@ -166,9 +166,9 @@ const Contact = () => {
                   name="user_email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className={`mt-1 p-3 w-full border rounded-md focus:ring focus:ring-blue-500 focus:outline-none ${
+                  className={`mt-1 p-3 w-full border rounded-md focus:ring-4 focus:ring-blue-500 focus:outline-none ${
                     emailError ? "border-red-500" : ""
-                  }`}
+                  } text-[#2A9D8F]`}
                 />
                 {emailError && (
                   <p className="text-red-500 text-sm">
@@ -179,7 +179,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-600"
+                  className="block text-sm text-white font-semibold"
                 >
                   Message
                 </label>
@@ -191,7 +191,7 @@ const Contact = () => {
                   onChange={(e) => setMessage(e.target.value)}
                   className={`mt-1 p-3 w-full border rounded-md focus:ring focus:ring-blue-500 focus:outline-none ${
                     messageError ? "border-red-500" : ""
-                  }`}
+                  } text-[#2a9d8f]`}
                 ></textarea>
                 {messageError && (
                   <p className="text-red-500 text-sm">
