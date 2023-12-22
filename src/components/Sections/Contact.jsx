@@ -125,7 +125,11 @@ const Contact = () => {
                 />
               </span>
             </h2>
-            <form ref={form} onSubmit={sendEmail} className="space-y-4">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="space-y-4 text-gray-600 text-xl font-bold"
+            >
               <div>
                 <label
                   htmlFor="user_name"
