@@ -1,0 +1,48 @@
+/* Center the solar system */
+.solar-system {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+/* Orbit styling */
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  animation: rotateOrbit linear infinite;
+}
+
+/* Alternate the rotation direction of orbits */
+.orbit:nth-child(even) {
+  animation-direction: reverse;
+}
+
+/* Planet styling */
+.planet {
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Animation for orbit rotation */
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

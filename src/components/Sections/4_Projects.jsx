@@ -76,7 +76,7 @@ const Projects = () => {
               ></path>
             </svg>
           </span>
-          <span className="absolute flex items-center pl-16 w-full h-full text-4xl text-purple-500 bg-slate-700 transition-all duration-300 transform group-hover:translate-x-full ease">
+          <span className="absolute flex items-center pl-16 w-full h-full text-4xl text-purple-500 bg-[#240046] font-bold transition-all duration-300 transform group-hover:translate-x-full ease">
             Projects
           </span>
           <span className="relative invisible">Button Text</span>
@@ -94,7 +94,7 @@ const Projects = () => {
           </div>
           <div className="w-full pr-3 mt-5 px-4">
             <div className="flex justify-between w-full">
-              <h1 className="text-2xl text-stone-300 font-bold mr-2">
+              <h1 className="text-2xl text-[#e0aaff] font-bold mr-2">
                 Restro Boss
               </h1>
               <div className="flex flex-wrap gap-2">
@@ -167,7 +167,7 @@ const Projects = () => {
           </div>
           <div className="w-full mt-5 px-4">
             <div className="flex justify-between w-full">
-              <h1 className="text-2xl text-stone-300 font-bold mr-2">
+              <h1 className="text-2xl text-[#e0aaff] font-bold mr-2">
                 Car Doc
               </h1>
               <div className="flex flex-wrap gap-2">
