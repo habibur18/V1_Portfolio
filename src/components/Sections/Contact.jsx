@@ -105,13 +105,25 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div id="contact" className="py-16 bg-gray-700 rounded-xl">
+      <div
+        id="contact"
+        className=" py-16 rounded-xl bg-gradient-to-b from-blue-500 via-blue-600 to-blue-900 text-white overflow-hidden"
+      >
+        {/* emoji */}
+
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto bg-white  p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-semibold animate-gradient mb-6 animate__animated animate__fadeInUp">
               I would <span className="gradient-text">love</span> to{" "}
               <span className="gradient-text">hear</span> from{" "}
-              <span className="gradient-text">you</span>
+              <span className="gradient-text">
+                you{" "}
+                <img
+                  className="inline w-14 rounded-full animate-bounce"
+                  src="https://static.vecteezy.com/system/resources/previews/028/177/792/original/cute-happy-emoji-kawaii-emoticon-doodle-outline-png.png"
+                  alt=""
+                />
+              </span>
             </h2>
             <form ref={form} onSubmit={sendEmail} className="space-y-4">
               <div>

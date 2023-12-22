@@ -18,12 +18,17 @@ const Intro = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div className={`text-white p-3 ${animate ? "animate-intro" : ""}`}>
+    <div
+      id="intro"
+      className={`text-white p-3 ${animate ? "animate-intro" : ""}`}
+    >
       <div>
         <div className={`flex justify-between animate-left`}>
           <div>
             <h1 className="text-4xl my-3">Hi, I am</h1>
-            <h1 className="lg:text-5xl font-bold name ">Habibur Rahman</h1>
+            <h1 className="lg:text-8xl text-6xl md:text-7xl font-bold name ">
+              Habibur Rahman
+            </h1>
 
             <h2
               style={{ lineHeight: "100px" }}
@@ -77,7 +82,7 @@ const Intro = () => {
               </p>
             </div>
           </div>
-          <div className="animate-right">
+          <div className="animate-right z-50">
             <img
               style={{ width: "300px" }}
               className="rounded-xl"

@@ -7,8 +7,7 @@
   }
 }
 
-.hi,
-.name {
+/* .name {
   display: inline-block;
   background-clip: text;
   color: transparent;
@@ -19,6 +18,21 @@
     #014f8e,
     #9c27b0,
     #2196f3
+  );
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s linear infinite;
+} */
+.name {
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    /* Gradient with more contrast against blue: */ #f50057,
+    /* Vivid red */ #f57c00,
+    /* Vibrant orange */ #ffff00,
+    /* Bright yellow */ #00e676,
+    /* Lime green */ #f50057 /* Back to red for a seamless loop */
   );
   background-size: 200% 100%;
   animation: gradientAnimation 10s linear infinite;

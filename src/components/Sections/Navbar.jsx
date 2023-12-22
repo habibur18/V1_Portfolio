@@ -42,7 +42,10 @@ const Navbar = () => {
         </RouterLink>
 
         {/* Hamburger icon */}
-        <div className="cursor-pointer text-5xl md:hidden" onClick={toggleMenu}>
+        <div
+          className="cursor-pointer text-5xl md:hidden z-50"
+          onClick={toggleMenu}
+        >
           <i className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"}`}></i>
         </div>
       </div>
@@ -79,7 +82,7 @@ const Navbar = () => {
             isMenuOpen
               ? "bg-gray-600 w-full text-center mx-auto rounded-xl"
               : ""
-          }cursor-pointer transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text `}
+          }cursor-pointer z-10 transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text `}
           onClick={() => handleLinkClick("projects")}
         >
           Projects
@@ -94,7 +97,7 @@ const Navbar = () => {
             isMenuOpen
               ? "bg-gray-600 w-full text-center mx-auto rounded-xl"
               : ""
-          }cursor-pointer transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-500 via-green-700 to-indigo-300 inline-block text-transparent bg-clip-text`}
+          }cursor-pointer z-20 transition-all font-bold duration-300 ease-in-out bg-gradient-to-r from-blue-500 via-green-700 to-indigo-300 inline-block text-transparent bg-clip-text`}
           onClick={() => handleLinkClick("contact")}
         >
           Contact

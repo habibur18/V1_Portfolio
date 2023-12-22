@@ -120,9 +120,9 @@ const Techstack = () => {
       <div>
         <div className="text-right my-10">
           <button className="text-3xl rounded-xl bg-gray-800" id="currently">
-            <h3 className="px-5 py-2 border-2 h-full flex items-center bg-gray-800 m-1 rounded-lg">
+            <p className="px-5 py-2 border-2 h-full flex items-center bg-gray-800 m-1 rounded-lg">
               Tools
-            </h3>
+            </p>
           </button>
         </div>
         <div className="grid items-center  gap-2 space-x-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
@@ -148,10 +148,10 @@ const Techstack = () => {
           <div className="text-center">
             <button className="text-3xl rounded-xl bg-gray-800 text-right">
               <h3 className="capitalize bg-gradient-to-r from-blue-500 to-red-500 text-white px-4 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate">
-                Currently Taking a Backend course from a local tech.
-                <button className="block ml-6 capitalize">
+                Currently Taking a challenge to learn in next year.
+                <p className="block ml-6 capitalize">
                   Where I will learn tech showing in orbit!
-                </button>
+                </p>
               </h3>
             </button>
           </div>
