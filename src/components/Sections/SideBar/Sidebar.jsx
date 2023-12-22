@@ -32,7 +32,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className=" py-4 text-xl font-semibold text-center text-white transition duration-300 rounded-tl-3xl rounded-br-2xl hover:from-purple-600 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500 md:w-auto fixed bottom-0 right-0">
+      <div className=" py-4 text-xl font-semibold text-center text-white transition duration-300 rounded-tl-3xl rounded-br-2xl hover:from-purple-600 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500 md:w-auto fixed bottom-0 left-0">
         <a
           href="https://www.linkedin.com/in/habibur18/"
           target="_blank"
