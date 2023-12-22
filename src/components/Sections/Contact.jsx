@@ -107,7 +107,7 @@ const Contact = () => {
       </div>
       <div
         id="contact"
-        className=" py-16 rounded-xl bg-gradient-to-b from-blue-500 via-blue-600 to-blue-900 text-white overflow-hidden"
+        className=" py-16 rounded-xl contact-bg text-white overflow-hidden"
       >
         {/* emoji */}
 

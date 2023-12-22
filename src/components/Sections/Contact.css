@@ -23,3 +23,16 @@
   background-size: 200% 100%;
   animation: gradientAnimation 3s linear infinite;
 }
+
+.contact-bg {
+  background: linear-gradient(
+    -129deg,
+    #153677,
+    #4e085f,
+    #1a2a6c,
+    #2c4151,
+    #4e085f
+  );
+  background-size: 100% 200%;
+  box-shadow: 0 5px 10px rgba(18, 186, 195, 0.3);
+}
