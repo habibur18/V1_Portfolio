@@ -36,4 +36,9 @@
   );
   background-size: 200% 100%;
   animation: gradientAnimation 10s linear infinite;
+  font-family: "Rancho", cursive;
+}
+
+.cName {
+  font-family: "Rancho", cursive;
 }

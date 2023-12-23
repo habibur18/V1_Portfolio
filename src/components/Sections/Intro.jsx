@@ -72,9 +72,9 @@ const Intro = () => {
             </div>
             <div className="md:w-3/5 text-xl animate-right sm:block my-2">
               <p>
-                I am a junior Web Developer from Bangladesh. After a year's
-                intensive study of web development, I am looking for a position
-                where I can advance my skills.
+                I am a junior Front-end Web Developer from Bangladesh. After a
+                year's intensive study of web development, I am looking for a
+                position where I can advance my skills.
               </p>
               <p>
                 Can I do everything? Far from it. I am interested in learning

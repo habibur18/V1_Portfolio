@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -26,8 +27,73 @@ const AboutMe = () => {
           About Me
         </span>
       </h1>
+      {/* about me */}
+      <div className="lg:max-w-4xl w-full p-6 lg:mx-auto text-lg text-white  my-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg space-y-7 shadow-3xl">
+        <p>
+          I have been intensively working on web development for over a year. I
+          have experience with a variety of technologies, including React,
+          Tailwind, Sass, and many others. I am currently learning Next.js and
+          Typescript while working on the latest project.
+        </p>
+        <p>
+          Can I do everything? Far from it. But I have experienced in Team lead
+          roles from exploring GitHub and if you are looking to add to your team
+          with the potential for rapid growth and the ability to constantly
+          learn, please do not hesitate to
+          <ScrollLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <span className="text-sky-500 underline font-bold bg-black px-2 bg-opacity-20 rounded-xl cursor-pointer">
+              contact me.
+            </span>
+          </ScrollLink>
+        </p>
+        {/* <p>
+          I love learning new technologies. Currently, I'm enrolled in a course
+          that offers two paths: Front-end and Full-stack development. I'm in a
+          dilemma about which path to choose, as I am actively seeking job
+          opportunities and internships. I plan to discuss the matter with my
+          company to make an informed decision regarding the most suitable path
+          for my career. Additionally, I'm excited to explore both paths during
+          the course and gain a comprehensive understanding by the end of it.{" "}
+        </p> */}
+      </div>
+      {/* more info */}
+      <div className="more-info max-w-5xl p-6 mx-auto text-lg text-white  my-4  shadow-3xl">
+        <div className="text-4xl font-bold my-5 text-[#778da9]">
+          More Information...
+        </div>
+        <div className="flex gap-20">
+          <div className="space-y-5">
+            <div className="text-[#cdb4db]">
+              <h1 className=" font-semibold">Name:</h1>
+              <p>Habibur Rahman</p>
+            </div>
+            <div className="text-[#cdb4db]">
+              <h1 className=" font-semibold">location:</h1>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          <div className="space-y-5">
+            <div className="text-[#cdb4db]">
+              <h1 className=" font-semibold">Age:</h1>
+              <p>18</p>
+            </div>
+            <div className="text-[#cdb4db]">
+              <h1 className=" font-semibold">English language:</h1>
+              <p>Level B1</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      {/* resume */}
       <div id="resume" className="my-8 text-white mx-16">
-        <h1 className="text-3xl font-bold mb-6">My Resume</h1>
+        <h1 className="text-3xl font-bold mb-6">Complete CV for download </h1>
         <div className="flex items-center space-x-4">
           <a
             href={resume}
@@ -50,18 +116,6 @@ const AboutMe = () => {
             <span className="text-lg font-semibold">View Online</span>
           </a>
         </div>
-      </div>
-
-      <div className="max-w-3xl p-6 mx-auto text-lg text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg  shadow-3xl">
-        <p>
-          I love learning new technologies. Currently, I'm enrolled in a course
-          that offers two paths: Front-end and Full-stack development. I'm in a
-          dilemma about which path to choose, as I am actively seeking job
-          opportunities and internships. I plan to discuss the matter with my
-          company to make an informed decision regarding the most suitable path
-          for my career. Additionally, I'm excited to explore both paths during
-          the course and gain a comprehensive understanding by the end of it.{" "}
-        </p>
       </div>
 
       <div>
