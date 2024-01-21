@@ -43,21 +43,22 @@ body::after {
   /* Keep width and height same */
   width: 200px;
   height: 200px;
+  z-index: -1;
 
   /* Position it absolutely at the desired location */
   position: absolute;
-  top: 0;
-  right: 60;
+  top: 10;
+  right: 0;
 
   /* Create a gradient for multiple colors */
   background: linear-gradient(90deg, #f00 0%, #ff0 33%, #0f0 66%, #00f 100%);
   background-size: 200px 200px;
 
   /* Blur the background */
-  filter: blur(90px);
+  filter: blur(60px);
 
   /* Keep it in its original position and allow rotation */
-  transform-origin: center;
+  /* transform-origin: center; */
   animation: rotate 10s linear infinite;
 }
 
