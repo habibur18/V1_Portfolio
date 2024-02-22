@@ -76,7 +76,7 @@ const AboutMe = () => {
             <FontAwesomeIcon icon={faFileDownload} className="text-xl" />
             <span className="text-lg font-semibold">Download Resume</span>
           </a>
-          <a href="https://drive.google.com/file/d/10hy6a9vrGRiMcXB1R8BsiKkTt1BsuMtN/view" target="_blank" rel="noopener noreferrer" className="bg-green-800 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300 transform hover:scale-105">
+          <a href="https://drive.google.com/file/d/172-KiaOV9KmNB4mERKONB40C27uYADUJ/view" target="_blank" rel="noopener noreferrer" className="bg-green-800 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300 transform hover:scale-105">
             <FontAwesomeIcon icon={faFileDownload} className="text-xl" />
             <span className="text-lg font-semibold">View Online</span>
           </a>
