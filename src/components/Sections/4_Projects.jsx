@@ -161,7 +161,7 @@ const Projects = () => {
                   <i>
                     <b>ReactJS, React Context API, react-toastify</b>
                   </i>
-                  . Users can save and delete todos. It offers a search function and utilizes the Context API for state management. Editing todos is also available. When users click "Add New Todo," "Edit," or "Update," a modal appears. Additionally, a single click deletes all todos. For deletion, a confirmation prompt appears before deletion, requiring user confirmation. In every case, update, add, delete I used React-Toastify for notifications.
+                  . Users can save and delete todos. It offers a search function and utilizes the Context API for state management. Editing todos is also available. When users click "Add Task," "Edit," or "Update," a modal appears. Additionally, a single click deletes all todos. For deletion, a confirmation prompt appears before deletion, requiring user confirmation. In every case, update, add, delete I used React-Toastify for notifications.
                 </p>
               </div>
             </div>
