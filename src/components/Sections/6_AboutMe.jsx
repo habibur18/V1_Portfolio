@@ -17,7 +17,7 @@ const AboutMe = () => {
       </h1>
       {/* about me */}
       <div className="lg:max-w-4xl w-full p-6 lg:mx-auto text-lg text-white  my-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-tl-3xl rounded-br-lg space-y-7 shadow-3xl">
-        <p>I have been intensively working on web development for over a year. I have experience with a variety of technologies, including React, Tailwind, Sass, and many others. I am currently learning Next.js and Typescript while working on the latest project.</p>
+        <p>I have been intensively working on web development for over a year. I have experience with a variety of technologies, including React, Tailwind, Next.js and many others. I am currently learning Next.js and Typescript while working on the latest project.</p>
         <p>
           Can I do everything? Far from it. But I have experienced in Team lead roles from exploring GitHub and if you are looking to add to your team with the potential for rapid growth and the ability to constantly learn, please do not hesitate to
           <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={500}>

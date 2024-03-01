@@ -28,7 +28,7 @@ body::after {
 /* top left */
 body::before {
   width: 400px;
-  height: 600px;
+  height: 400px;
   position: absolute;
   background: blueviolet;
   backdrop-filter: blur(500px);
