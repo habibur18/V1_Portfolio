@@ -56,9 +56,9 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className=" my-10 px-4 md:px-10">
+    <div id="projects" className=" my-44 px-4 md:px-10">
       <div>
-        <h1 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group w-full md:w-1/2 h-20">
+        <h1 className="relative cursor-pointer inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group w-full md:w-1/2 h-20">
           <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
             <span className="pr-2 text-2xl">View Projects</span>
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

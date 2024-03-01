@@ -20,8 +20,8 @@ const Intro = () => {
   return (
     <div id="intro" className={`text-white p-3 ${animate ? "animate-intro" : ""}`}>
       <div>
-        <div className={`flex justify-between flex-col-reverse lg:flex-row animate-left items-center`}>
-          <div className=" md:w-4/5">
+        <div className={`flex justify-between flex-col-reverse lg:flex-row  items-center`}>
+          <div className=" md:w-4/5 animate-left">
             <h1 className="text-4xl my-3">Hi There, I am</h1>
             <h1 className="lg:text-8xl text-6xl md:text-7xl font-bold name ">Habibur Rahman</h1>
 
@@ -50,8 +50,9 @@ const Intro = () => {
               <p>Can I do everything? Far from it. I am interested in learning new technologies and developing my knowledge.</p>
             </div>
           </div>
-          <div className="animate-right w-3/4 mx-auto lg:w-3/5 xl:w-2/5 flex justify-center z-50">
-            <img className="rounded-xl sm:w-3/4 md:w-2/4 lg:w-3/4  " src="https://i.ibb.co/Jtq99kb/mine.jpg" alt="" />
+          <div className="relative animate-right w-3/4 mx-auto lg:w-3/5 xl:w-2/5 flex justify-center z-50">
+            <img className="rounded-xl animate-updown sm:w-3/4 md:w-2/4 lg:w-3/4  " src="https://i.ibb.co/Jtq99kb/mine.jpg" alt="" />
+            <div className="bg-circle invisible lg:visible"></div>
           </div>
         </div>
         <div className="my-5 space-x-5 text-5xl hidden sm:block">

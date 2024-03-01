@@ -6,7 +6,6 @@ import Footer from "../Sections/Footer/Footer";
 import Intro from "../Sections/Intro";
 import Navbar from "../Sections/Navbar";
 import Sidebar from "../Sections/SideBar/Sidebar";
-import SolarSystem from "../Sections/orbit/Orbits/SolarSystem";
 
 const Home = () => {
   return (
@@ -16,6 +15,7 @@ const Home = () => {
         <Intro />
         <Techstack />
         {/* <SolarSystem /> */}
+
         <Projects />
         <AboutMe />
         <Contact />

@@ -7,9 +7,27 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
 }
 html {
   background: #123;
+}
+@layer components {
+  .animate-updown {
+    animation-name: animate-updownAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes animate-updownAnim {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
 }
 
 head::before,
@@ -39,26 +57,27 @@ body::before {
   z-index: -1;
 }
 /* top right */
-body::after {
+.bg-circle {
   /* Keep width and height same */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  backdrop-filter: blur(100px);
   z-index: -1;
 
-  /* Position it absolutely at the desired location */
-  position: absolute;
-  top: 10;
-  right: 0;
-
-  /* Create a gradient for multiple colors */
   background: linear-gradient(90deg, #f00 0%, #ff0 33%, #0f0 66%, #00f 100%);
   background-size: 200px 200px;
 
-  /* Blur the background */
-  filter: blur(60px);
+  filter: blur(90px);
 
-  /* Keep it in its original position and allow rotation */
-  /* transform-origin: center; */
   animation: rotate 10s linear infinite;
 }
 
@@ -72,7 +91,6 @@ body::after {
 }
 
 body::before {
-  @include dots(40);
   animation-delay: 0s;
 }
 
@@ -96,28 +114,23 @@ body::before {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50px); /* Initial position, adjust as needed */
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0); /* Final position */
+    transform: translateX(0);
   }
-}
-
-/* Apply the animation to the Intro component */
-.animate-intro {
-  animation: fadeIn 1.3s ease-in-out; /* Adjust the duration and easing as needed */
 }
 
 /* Entrance animation from the left */
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-220px); /* Initial position, adjust as needed */
+    transform: translateX(-220px);
   }
   to {
     opacity: 1;
-    transform: translateX(0); /* Final position */
+    transform: translateX(0);
   }
 }
 
@@ -125,19 +138,19 @@ body::before {
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(220px); /* Initial position, adjust as needed */
+    transform: translateX(220px);
   }
   to {
     opacity: 1;
-    transform: translateX(0); /* Final position */
+    transform: translateX(0);
   }
 }
 
 /* Apply the animations to the Intro component */
 .animate-left {
-  animation: slideInLeft 1s ease-in-out; /* Adjust the duration and easing as needed */
+  animation: slideInLeft 1s ease-in-out;
 }
 
 .animate-right {
-  animation: slideInRight 1s ease-in-out; /* Adjust the duration and easing as needed */
+  animation: slideInRight 1s ease-in-out;
 }

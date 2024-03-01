@@ -4,7 +4,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import resume from "../../../public/Habibur-Rahman.pdf";
+import resume from "/Habibur-Rahman.pdf";
 const AboutMe = () => {
   return (
     <div id="aboutMe">
