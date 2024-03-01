@@ -167,7 +167,7 @@ const Projects = () => {
             </div>
             <div className="mt-auto">
               <div className="text-white justify-start mx-5 flex gap-10">
-                <a href="https://github.com/habibur18/Todo-app" target="_blank" rel="noreferrer">
+                <a href="https://github.com/habibur18/Tasker_App_Reducer_Context-3" target="_blank" rel="noreferrer">
                   <div className="text-xl my-6">
                     <span>
                       <img className="w-16 rounded-2xl" src="https://i.postimg.cc/FdPkrFs5/Github.png" alt="" />
@@ -175,7 +175,7 @@ const Projects = () => {
                   </div>
                 </a>
                 <p className="text-xl my-6">
-                  <a href="https://todo-app18.vercel.app/" target="_blank" rel="noreferrer">
+                  <a href="https://tasker-app-reducer-context-3.vercel.app/" target="_blank" rel="noreferrer">
                     <img className="w-16 rounded-2xl" src="https://i.postimg.cc/YG2mBL7z/Live.png" alt="" />
                   </a>
                 </p>
